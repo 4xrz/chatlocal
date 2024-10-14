@@ -14,8 +14,9 @@ def setm(fr,messagee):
     sss='1234567890'
     if fr:
         gt = c.get('dmj')
+        new = f'رسالة من : {fr}\nالرسالة : {messagee}'
         #mg = f'رسالة من : {fr}\nالرسالة : {messagee}'
-        jj = f'{gt}\n\n{f'رسالة من : {fr}\nالرسالة : {messagee}'}'
+        jj = f'{gt}\n\n{new}'
         if c.get('dmj') ==None:
             c.set('dmj',f'رسالة من : {fr}\nالرسالة : {messagee}')
             return 'Done !'
